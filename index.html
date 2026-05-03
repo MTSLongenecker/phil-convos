@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phil-Convos | Philosophical Dialogue Platform</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 class="logo"><i class="fas fa-brain"></i> Phil-Convos</h1>
+                <p class="subtitle">Philosophical dialogues with AI chatbots representing great thinkers</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="intro">
+                <div class="intro-text">
+                    <h2>Engage in Philosophical Dialogue</h2>
+                    <p>Explore profound questions and debates through interactive conversations with AI representations of influential philosophers.</p>
+                    <p>Each chatbot embodies the philosophical style, concepts, and thought-provoking questions of its respective thinker.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="assets/images/philosophy-icon.svg" alt="Philosophy icon" class="placeholder-icon">
+                </div>
+            </section>
+
+            <section class="philosophers-section">
+                <h2>Featured Philosophers</h2>
+                <div class="philosophers-grid">
+                    <!-- Derek Parfit Card -->
+                    <div class="philosopher-card">
+                        <div class="philosopher-header">
+                            <div class="philosopher-icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <h3>Derek Parfit</h3>
+                            <span class="philosopher-era">1942–2017</span>
+                        </div>
+                        <div class="philosopher-details">
+                            <p class="philosopher-specialty">Personal Identity, Rationality, Ethics</p>
+                            <p class="philosopher-description">British philosopher known for his rigorous analytical style and exploration of what makes us the same person over time.</p>
+                        </div>
+                        <div class="philosopher-key-concepts">
+                            <h4>Key Concepts</h4>
+                            <ul>
+                                <li>Personal identity continuity</li>
+                                <li>Psychological vs physical identity</li>
+                                <li>Moral reasoning and rationality</li>
+                                <li>Future generations and ethics</li>
+                            </ul>
+                        </div>
+                        <div class="philosopher-action">
+                            <a href="philosophers/parfit.html" class="btn btn-primary">
+                                <i class="fas fa-comments"></i> Chat with Parfit
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Socrates Card -->
+                    <div class="philosopher-card">
+                        <div class="philosopher-header">
+                            <div class="philosopher-icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <h3>Socrates</h3>
+                            <span class="philosopher-era">c. 470–399 BCE</span>
+                        </div>
+                        <div class="philosopher-details">
+                            <p class="philosopher-specialty">Philosophical Method, Ethics, Logic</p>
+                            <p class="philosopher-description">Ancient Greek philosopher known for his Socratic Method of questioning, dialectical approach, and pursuit of truth through dialogue.</p>
+                        </div>
+                        <div class="philosopher-key-concepts">
+                            <h4>Key Concepts</h4>
+                            <ul>
+                                <li>Socratic Method of questioning</li>
+                                <li>Dialectic and philosophical dialogue</li>
+                                <li>Virtue ethics and moral excellence</li>
+                                <li>Knowledge vs belief distinction</li>
+                            </ul>
+                        </div>
+                        <div class="philosopher-action">
+                            <a href="philosophers/socrates.html" class="btn btn-primary">
+                                <i class="fas fa-comments"></i> Chat with Socrates
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Coming Soon Card -->
+                    <div class="philosopher-card coming-soon">
+                        <div class="philosopher-header">
+                            <div class="philosopher-icon">
+                                <i class="fas fa-plus-circle"></i>
+                            </div>
+                            <h3>More Philosophers</h3>
+                            <span class="philosopher-era">Coming Soon</span>
+                        </div>
+                        <div class="philosopher-details">
+                            <p class="philosopher-description">We're expanding our collection of philosophical thinkers. Suggestions welcome!</p>
+                        </div>
+                        <div class="philosopher-action">
+                            <button class="btn btn-secondary" id="suggestBtn">
+                                <i class="fas fa-lightbulb"></i> Suggest a Philosopher
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2>Platform Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Interactive Dialogue</h3>
+                        <p>Engage in meaningful conversations with philosopher chatbots designed to emulate their thinking style.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Educational Resources</h3>
+                        <p>Learn about philosophical concepts, thought experiments, and key works of each thinker.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community Discussion</h3>
+                        <p>Share insights and discuss philosophical questions with other users.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Thought Experiments</h3>
+                        <p>Explore famous philosophical dilemmas and hypothetical scenarios.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2>About Phil-Convos</h2>
+                <div class="about-content">
+                    <p>Phil-Convos is designed to make philosophical exploration accessible and engaging. By creating AI representations of philosophers, we aim to:</p>
+                    <ul>
+                        <li>Provide interactive learning experiences</li>
+                        <li>Help users understand complex philosophical concepts</li>
+                        <li>Foster critical thinking and self-reflection</li>
+                        <li>Create a platform for philosophical dialogue and exploration</li>
+                    </ul>
+                    <p>The project is open-source and welcomes contributions from philosophers, educators, and developers.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Phil-Convos</h4>
+                    <p>A philosophical dialogue platform</p>
+                </div>
+                <div class="footer-section">
+                    <h4>GitHub</h4>
+                    <p><a href="https://github.com/" target="_blank">View Repository</a></p>
+                    <p><a href="https://github.com/" target="_blank">Contribute</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Suggestions and feedback welcome</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Phil-Convos. All content is educational and non-commercial.</p>
+                <p>Philosophical AI chatbots are designed for educational purposes only.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for philosopher suggestions -->
+    <div class="modal" id="suggestModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Suggest a Philosopher</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="suggestForm">
+                    <div class="form-group">
+                        <label for="philosopherName">Philosopher Name</label>
+                        <input type="text" id="philosopherName" placeholder="e.g., Socrates, Aristotle, Kant...">
+                    </div>
+                    <div class="form-group">
+                        <label for="philosopherDescription">Key Contributions/Interests</label>
+                        <textarea id="philosopherDescription" rows="3" placeholder="Brief description of their philosophy"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="philosopherEra">Era/Time Period</label>
+                        <input type="text" id="philosopherEra" placeholder="e.g., Ancient Greece, Enlightenment, Contemporary">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Suggestion</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

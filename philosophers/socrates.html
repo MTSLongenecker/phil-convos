@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socrates Dialogue | Phil-Convos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/philosopher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Socrates specific styles */
+        .socrates-header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #4caf50;
+        }
+        
+        .socrates-intro {
+            background-color: #e8f5e9;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .socrates-message {
+            background-color: #f1f8e9;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .dialogue-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .thought-experiment-card {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 5px solid #4caf50;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .concept-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="socrates-header">
+            <div class="header-content">
+                <h1 class="logo"><i class="fas fa-brain"></i> Phil-Convos</h1>
+                <p class="subtitle">Dialogue with Socrates</p>
+            </div>
+        </header>
+
+        <nav class="philosopher-nav">
+            <a href="../index.html" class="nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="parfit.html" class="nav-link">
+                <i class="fas fa-user-circle"></i> Derek Parfit
+            </a>
+        </nav>
+
+        <main>
+            <section class="philosopher-profile">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="../assets/images/socrates-icon.svg" alt="Socrates icon" class="placeholder-icon">
+                    </div>
+                    <div class="profile-info">
+                        <h2>Socrates</h2>
+                        <p class="profile-era">c. 470–399 BCE</p>
+                        <p class="profile-specialty">Philosophical Method, Ethics, Logic</p>
+                        <p class="profile-description">
+                            Ancient Greek philosopher known for his Socratic Method of questioning, dialectical approach, and pursuit of truth through dialogue.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <h3>Philosophical Contributions</h3>
+                        <ul>
+                            <li><strong>Socratic Method:</strong> Dialectical questioning to expose contradictions and arrive at truth</li>
+                            <li><strong>Ethics:</strong> Emphasis on virtue, justice, and moral excellence</li>
+                            <li><strong>Philosophical Dialogue:</strong> Engaging in conversation as a method of inquiry</li>
+                            <li><strong>Logic:</strong> Development of logical reasoning through questioning</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="socrates-intro">
+                <h2>Dialogue with Socrates</h2>
+                <p>Engage with Socrates using his famous method of questioning. Socrates will ask thought-provoking questions to help you examine your beliefs and assumptions.</p>
+                <p>The Socratic Method involves asking questions to stimulate critical thinking and illuminate ideas.</p>
+            </section>
+
+            <section class="thought-experiments">
+                <h2>Socratic Questions</h2>
+                <div class="thought-experiment-card">
+                    <h3>What is Justice?</h3>
+                    <p>If justice is about fairness and equality, what does it mean to be truly fair? How can we know what justice requires?</p>
+                </div>
+                <div class="thought-experiment-card">
+                    <h3>What is Virtue?</h3>
+                    <p>Is virtue something we can learn? If so, how do we learn it? If not, why do we believe some people are virtuous?</p>
+                </div>
+                <div class="thought-experiment-card">
+                    <h3>What is Truth?</h3>
+                    <p>Can we ever know what is true? If we cannot know truth, why do we seek it? What makes something true?</p>
+                </div>
+                <div class="thought-experiment-card">
+                    <h3>What is Knowledge?</h3>
+                    <p>What do we mean when we say we "know" something? Is there a difference between belief and knowledge?</p>
+                </div>
+            </section>
+
+            <section class="dialogue-section">
+                <h2>Dialogue Interface</h2>
+                <div class="dialogue-container">
+                    <div class="dialogue-messages">
+                        <!-- Initial message from Socrates -->
+                        <div class="message socrates-message">
+                            <div class="message-header">
+                                <span class="sender">Socrates</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                Let us begin by examining a fundamental question: What is justice?
+                            </div>
+                        </div>
+                        <div class="message socrates-message">
+                            <div class="message-header">
+                                <span class="sender">Socrates</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                Many people claim to know what justice is, but let me ask: if justice is about fairness and equality, what does it mean to be truly fair?
+                            </div>
+                        </div>
+                        <div class="message socrates-message">
+                            <div class="message-header">
+                                <span class="sender">Socrates</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                Consider this: if someone steals from you, justice might require punishment. But if someone steals because they are starving, is justice different? How can we know what justice requires in different situations?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialogue-input">
+                        <textarea id="userInput" placeholder="Type your response to Socrates..." rows="3"></textarea>
+                        <div class="dialogue-controls">
+                            <button id="sendBtn" class="btn btn-primary">
+                                <i class="fas fa-comments"></i> Send Message
+                            </button>
+                            <button id="clearBtn" class="btn btn-secondary">
+                                <i class="fas fa-trash"></i> Clear Conversation
+                            </button>
+                            <button id="randomBtn" class="btn btn-secondary">
+                                <i class="fas fa-question-circle"></i> Random Question
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="philosopher-key-concepts">
+                <h2>Socratic Concepts</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3>Socratic Method</h3>
+                        <p>The use of questioning to expose contradictions and arrive at truth.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Dialectic</h3>
+                        <p>Argumentative dialogue between people holding different points of view.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Virtue Ethics</h3>
+                        <p>The importance of moral excellence and character development.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Knowledge vs Belief</h3>
+                        <p>The distinction between what we believe and what we truly know.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Phil-Convos</h4>
+                    <p>A philosophical dialogue platform</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <p><a href="https://en.wikipedia.org/wiki/Socrates" target="_blank">Wikipedia</a></p>
+                    <p><a href="https://plato.stanford.edu/entries/socrates/" target="_blank">Stanford Encyclopedia</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suggestions</h4>
+                    <p>Suggestions for additional features welcome</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Phil-Convos. This Socrates chatbot is designed for educational purposes only.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Socrates dialogue functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendBtn = document.getElementById('sendBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const randomBtn = document.getElementById('randomBtn');
+            const userInput = document.getElementById('userInput');
+            const dialogueMessages = document.querySelector('.dialogue-messages');
+
+            // Sample Socrates responses
+            const socratesResponses = [
+                "Interesting response. Let me ask you: What do you mean by that?",
+                "Could you clarify your position? I want to understand exactly what you believe.",
+                "Let me probe further: If we accept your claim, what would follow from it?",
+                "Consider this counterexample: what if someone disagreed with your position?",
+                "What evidence supports your belief?",
+                "Is there any situation where your belief might not hold true?",
+                "Let me examine your claim more closely. What are its implications?",
+                "Many people believe something similar, but is that belief justified?",
+                "Would you still hold your belief if circumstances changed?",
+                "What if I presented a different perspective? Would that change your view?"
+            ];
+
+            // Sample Socrates questions
+            const socratesQuestions = [
+                "What is justice?",
+                "What is virtue?",
+                "What is truth?",
+                "What is knowledge?",
+                "Can we ever know what is true?",
+                "Is virtue something we can learn?",
+                "What do we mean when we say we 'know' something?",
+                "If we cannot know truth, why do we seek it?"
+            ];
+
+            // Function to add a message to the dialogue
+            function addMessage(sender, content) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+                
+                if (sender === 'Socrates') {
+                    messageDiv.classList.add('socrates-message');
+                } else {
+                    messageDiv.classList.add('user-message');
+                }
+                
+                messageDiv.innerHTML = `
+                    <div class="message-header">
+                        <span class="sender">${sender}</span>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-content">${content}</div>
+                `;
+                
+                dialogueMessages.appendChild(messageDiv);
+                
+                // Scroll to bottom
+                dialogueMessages.scrollTop = dialogueMessages.scrollHeight;
+                
+                // Add fade-in animation
+                messageDiv.style.opacity = '0';
+                setTimeout(() => {
+                    messageDiv.style.transition = 'opacity 0.3s ease';
+                    messageDiv.style.opacity = '1';
+                }, 0);
+            }
+
+            // Send message functionality
+            if (sendBtn) {
+                sendBtn.addEventListener('click', function() {
+                    const message = userInput.value.trim();
+                    if (message) {
+                        // Add user message
+                        addMessage('You', message);
+                        
+                        // Add Socrates response after delay
+                        setTimeout(() => {
+                            const randomResponse = socratesResponses[Math.floor(Math.random() * socratesResponses.length)];
+                            addMessage('Socrates', randomResponse);
+                        }, 1000);
+                        
+                        // Clear input
+                        userInput.value = '';
+                    }
+                });
+            }
+
+            // Clear conversation
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function() {
+                    const messages = dialogueMessages.querySelectorAll('.message');
+                    messages.forEach(msg => {
+                        // Keep the first three introductory messages
+                        if (!msg.classList.contains('socrates-message') || 
+                            msg.textContent.indexOf('Let us begin') === -1 &&
+                            msg.textContent.indexOf('Many people claim') === -1 &&
+                            msg.textContent.indexOf('Consider this') === -1) {
+                            msg.remove();
+                        }
+                    });
+                    
+                    // Show confirmation message
+                    setTimeout(() => {
+                        addMessage('Socrates', "The conversation has been cleared. Shall we begin anew with a different question?");
+                    }, 500);
+                });
+            }
+
+            // Random question button
+            if (randomBtn) {
+                randomBtn.addEventListener('click', function() {
+                    const randomQuestion = socratesQuestions[Math.floor(Math.random() * socratesQuestions.length)];
+                    userInput.value = randomQuestion;
+                });
+            }
+
+            // Allow Enter key to send message (Shift+Enter for new line)
+            userInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendBtn.click();
+                }
+            });
+
+            // Add initial messages if conversation is empty
+            function initializeDialogue() {
+                const existingMessages = dialogueMessages.querySelectorAll('.message');
+                if (existingMessages.length < 3) {
+                    addMessage('Socrates', 'Let us begin by examining a fundamental question: What is justice?');
+                    addMessage('Socrates', 'Many people claim to know what justice is, but let me ask: if justice is about fairness and equality, what does it mean to be truly fair?');
+                    addMessage('Socrates', 'Consider this: if someone steals from you, justice might require punishment. But if someone steals because they are starving, is justice different? How can we know what justice requires in different situations?');
+                }
+            }
+
+            // Initialize dialogue on page load
+            initializeDialogue();
+        });
+    </script>
+</body>
+</html>

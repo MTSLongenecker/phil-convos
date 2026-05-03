@@ -1,0 +1,456 @@
+/* Phil-Convos Styles */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Main content */
+main {
+    margin-bottom: 3rem;
+}
+
+/* Intro section */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.intro-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.intro-text h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.intro-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.intro-image {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.placeholder-icon {
+    width: 150px;
+    height: 150px;
+    background-color: #e3e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #5d6d7e;
+}
+
+/* Philosophers section */
+.philosophers-section {
+    margin-bottom: 3rem;
+}
+
+.philosophers-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.philosophers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.philosopher-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosopher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0,两个15);
+}
+
+.philosopher-card.coming-soon {
+    background-color: #e3e8f0;
+}
+
+.philosopher-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.philosopher-icon {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #3498db;
+}
+
+.philosopher-header h3 {
+    font-size: 1.5rem;
+    margin-right: auto;
+    color: #2c3e50;
+}
+
+.philosopher-era {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.philosopher-details {
+    margin-bottom: 1rem;
+}
+
+.philosopher-specialty {
+    font-weight: 600;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+.philosopher-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.philosopher-key-concepts {
+    margin-bottom: 1rem;
+}
+
+.philosopher-key-concepts h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.philosopher-key-concepts ul {
+    list-style-type: none;
+}
+
+.philosopher-key-concepts li {
+    padding-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.philosopher-key-concepts li::before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.philosopher-action {
+    text-align: center;
+}
+
+/* Features section */
+.features-section {
+    margin-bottom: 3rem;
+}
+
+.features-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0,两个1);
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+}
+
+/* About section */
+.about-section {
+    margin-bottom: 3rem;
+}
+
+.about-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+}
+
+.about-content ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.about-content li {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.about-content li::before {
+    content: "✓";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255,两个1);
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.footer-bottom p {
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5d6d7e;
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,两个5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0,两个3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-header h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.modal-close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #7f8c8d;
+    background: none;
+    border: none;
+}
+
+.modal-body {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+    
+    .philosophers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+}
