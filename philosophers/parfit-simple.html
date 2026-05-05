@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek Parfit Simple Chat | Phil-Convos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/philosopher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .parfit-message {
+            background-color: #e3f2fd;
+            border-left: 4px solid #3498db;
+        }
+        
+        .dialogue-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1 class="logo"><i class="fas fa-brain"></i> Phil-Convos</h1>
+                <p class="subtitle">Simple Derek Parfit Chat</p>
+            </div>
+        </header>
+
+        <nav class="philosopher-nav">
+            <a href="../index.html" class="nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="parfit.html" class="nav-link">
+                <i class="fas fa-comments"></i> Original Parfit
+            </a>
+            <a href="parfit-pdf.html" class="nav-link">
+                <i class="fas fa-file-pdf"></i> PDF Enhanced
+            </a>
+            <a href="parfit-personal-identity.html" class="nav-link">
+                <i class="fas fa-brain"></i> Personal Identity
+            </a>
+        </nav>
+
+        <main>
+            <section class="philosopher-profile">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="../assets/images/parfit-icon.svg" alt="Derek Parfit icon" class="placeholder-icon">
+                    </div>
+                    <div class="profile-info">
+                        <h2>Derek Parfit</h2>
+                        <p class="profile-era">1942–2017</p>
+                        <p class="profile-specialty">Personal Identity, Rationality, Ethics</p>
+                        <p class="profile-description">
+                            British philosopher known for his rigorous analytical style and exploration of what makes us the same person over time.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <h3>Simple Chat</h3>
+                        <p>This is a simple version without provider switching or citations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dialogue-section">
+                <h2>Simple Dialogue Interface</h2>
+                <div class="dialogue-container">
+                    <div class="dialogue-messages">
+                        <!-- Initial message from Derek Parfit -->
+                        <div class="message parfit-message">
+                            <div class="message-header">
+                                <span class="sender">Derek Parfit</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                Let me begin with a fundamental question about personal identity - what makes you the same person over time?
+                            </div>
+                        </div>
+                        <div class="message parfit-message">
+                            <div class="message-header">
+                                <span class="sender">Derek Parfit</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                Imagine you wake up tomorrow with all your memories intact, but your body has completely changed. Are you still you?
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dialogue-input">
+                        <textarea id="userInput" placeholder="Ask Derek Parfit about personal identity..." rows="3"></textarea>
+                        <div class="dialogue-controls">
+                            <button id="sendBtn" class="btn btn-primary">
+                                <i class="fas fa-comments"></i> Send Message
+                            </button>
+                            <button id="clearBtn" class="btn btn-secondary">
+                                <i class="fas fa-trash"></i> Clear Conversation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Phil-Convos</h4>
+                    <p>A philosophical dialogue platform</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Simple Chat</h4>
+                    <p>No citations, no provider switching</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Simple Version</h4>
+                    <p>Just pure philosophical conversation</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Phil-Convos. Derek Parfit simple chat.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendBtn = document.getElementById('sendBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const userInput = document.getElementById('userInput');
+            const dialogueMessages = document.querySelector('.dialogue-messages');
+            
+            // Function to add a message to the dialogue
+            function addMessage(sender, content) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+                
+                if (sender === 'Derek Parfit') {
+                    messageDiv.classList.add('parfit-message');
+                } else {
+                    messageDiv.classList.add('user-message');
+                }
+                
+                messageDiv.innerHTML = `
+                    <div class="message-header">
+                        <span class="sender">${sender}</span>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-content">${content}</div>
+                `;
+                
+                dialogueMessages.appendChild(messageDiv);
+                
+                // Scroll to bottom
+                dialogueMessages.scrollTop = dialogueMessages.scrollHeight;
+                
+                // Add fade-in animation
+                messageDiv.style.opacity = '0';
+                setTimeout(() => {
+                    messageDiv.style.transition = 'opacity 0.3s ease';
+                    messageDiv.style.opacity = '1';
+                }, 0);
+            }
+            
+            // Enhanced send message functionality
+            if (sendBtn) {
+                sendBtn.addEventListener('click', function() {
+                    const message = userInput.value.trim();
+                    if (message) {
+                        // Add user message
+                        addMessage('You', message);
+                        
+                        // Add Derek Parfit response after delay
+                        setTimeout(() => {
+                            const parfitResponses = {
+                                "What is personal identity?": "Personal identity depends on psychological continuity rather than physical continuity.",
+                                "Would I survive teleportation?": "Yes, through psychological continuity. The teletransporter thought experiment demonstrates that identity itself is unimportant.",
+                                "What moral obligations do we have to future generations?": "We have significant obligations to future generations. Our actions today affect their wellbeing.",
+                                "What matters in survival if not identity?": "What matters is psychological continuity and connectedness."
+                            };
+                            
+                            const answer = parfitResponses[message] || "Derek Parfit: I need to consult my work \"Reasons and Persons\" to answer that question thoroughly.";
+                            addMessage('Derek Parfit', answer);
+                        }, 1000);
+                        
+                        // Clear input
+                        userInput.value = '';
+                    }
+                });
+            }
+            
+            // Clear conversation
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function() {
+                    const messages = dialogueMessages.querySelectorAll('.message');
+                    messages.forEach(msg => {
+                        // Keep the first two introductory messages
+                        if (!msg.classList.contains('parfit-message') || 
+                            msg.textContent.indexOf('Let me begin') === -1 &&
+                            msg.textContent.indexOf('Imagine you wake up') === -1) {
+                            msg.remove();
+                        }
+                    });
+                    
+                    // Show confirmation message
+                    setTimeout(() => {
+                        addMessage('Derek Parfit', "The conversation has been cleared. Shall we begin anew?");
+                    }, 500);
+                });
+            }
+            
+            // Allow Enter key to send message (Shift+Enter for new line)
+            userInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendBtn.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
