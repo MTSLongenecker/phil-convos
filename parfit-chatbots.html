@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfit Chatbots Summary</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f5f7fa;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .table-container {
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .status-live {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .status-fixed {
+            color: #2980b9;
+            font-weight: bold;
+        }
+        
+        .status-ready {
+            color: #d35400;
+            font-weight: bold;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-list li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-size: 18px;
+        }
+        
+        .download-section {
+            background-color: #d5f4e6;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .download-button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 500;
+        }
+        
+        .download-button:hover {
+            background-color: #2980b9;
+        }
+        
+        .pdf-section {
+            background-color: #ffeaa7;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .citation-list {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .citation-item {
+            padding: 10px;
+            background-color: white;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .url-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .url-link:hover {
+            text-decoration: underline;
+        }
+        
+        .pdf-icon {
+            color: #2980b9;
+            margin-right: 8px;
+        }
+        
+        .feature-icon {
+            color: #27ae60;
+            margin-right: 8px;
+        }
+        
+        .warning-icon {
+            color: #e74c3c;
+            margin-right: 8px;
+        }
+        
+        .note {
+            background-color: #f1c40f;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Parfit Chatbots Summary</h1>
+        
+        <div class="section">
+            <h2>Chatbot Overview</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Chatbot Name</th>
+                            <th>URL</th>
+                            <th>Features</th>
+                            <th>Status</th>
+                            <th>GitHub Pages</th>
+                            <th>PDF Citations</th>
+                            <th>Provider Switching</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Original Parfit</strong></td>
+                            <td><code>philosophers/parfit.html</code></td>
+                            <td>
+                                <ul class="feature-list">
+                                    <li>Simple conversation</li>
+                                    <li>Basic dialogue</li>
+                                    <li>No advanced features</li>
+                                </ul>
+                            </td>
+                            <td class="status-live">Live</td>
+                            <td><a href="https://mtslongenecker.github.io/phil-convos/philosophers/parfit.html" class="url-link">↗ Visit</a></td>
+                            <td>None</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Simple Chat</strong></td>
+                            <td><code>philosophers/parfit-simple.html</code></td>
+                            <td>
+                                <ul class="feature-list">
+                                    <li>Simple conversation</li>
+                                    <li>No JavaScript issues</li>
+                                    <li>Quick chat interface</li>
+                                </ul>
+                            </td>
+                            <td class="status-live">Live</td>
+                            <td><a href="https://mtslongenecker.github.io/phil-convos/philosophers/parfit-simple.html" class="url-link">↗ Visit</a></td>
+                            <td>None</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PDF Enhanced</strong></td>
+                            <td><code>philosophers/parfit-pdf.html</code></td>
+                            <td>
+                                <ul class="feature-list">
+                                    <li>PDF citations</li>
+                                    <li>Provider switching</li>
+                                    <li>Citation tracking</li>
+                                    <li>Mock → Deepseek → OpenAI</li>
+                                </ul>
+                            </td>
+                            <td class="status-fixed">Fixed JavaScript</td>
+                            <td><a href="https://mtslongenecker.github.io/phil-convos/philosophers/parfit-pdf.html" class="url-link">↗ Visit</a></td>
+                            <td>11 citations</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Personal Identity</strong></td>
+                            <td><code>philosophers/parfit-personal-identity.html</code></td>
+                            <td>
+                                <ul class="feature-list">
+                                    <li>Focus on Personal Identity section</li>
+                                    <li>Citations from pages 10-175</li>
+                                    <li>Teletransporter thought experiment</li>
+                                    <li>Psychological continuity focus</li>
+                                </ul>
+                            </td>
+                            <td class="status-live">Live</td>
+                            <td><a href="https://mtslongenecker.github.io/phil-convos/philosophers/parfit-personal-identity.html" class="url-link">↗ Visit</a></td>
+                            <td>10 citations</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>David Lewis</strong></td>
+                            <td><code>philosophers/lewis.html</code></td>
+                            <td>
+                                <ul class="feature-list">
+                                    <li>Modal realism chatbot</li>
+                                    <li>Counterpart theory</li>
+                                    <li>Humean supervenience</li>
+                                </ul>
+                            </td>
+                            <td class="status-live">Live</td>
+                            <td><a href="https://mtslongenecker.github.io/phil-convos/philosophers/lewis.html" class="url-link">↗ Visit</a></td>
+                            <td>None</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Socrates</strong></td>
+                            <td><code>philosophers/socrates.html</code></td>
+                            <td>
+                                <ul class="feature-list">
+                                    <li>Socratic method</li>
+                                    <li>Dialectic dialogue</li>
+                                    <li>Philosophical questioning</li>
+                                </ul>
+                            </td>
+                            <td class="status-live">Live</td>
+                            <td><a href="https://mtslongenecker.github.io/phil-convos/philosophers/socrates.html" class="url-link">↗ Visit</a></td>
+                            <td>None</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="pdf-section">
+            <h2>📚 PDF Citations from Your Uploaded "Reasons and Persons"</h2>
+            <p><strong>Pages processed:</strong> 152 pages</p>
+            <p><strong>Key citations extracted:</strong> 11 passages</p>
+            <p><strong>Personal Identity section focus:</strong> Pages 10-175</p>
+            
+            <div class="citation-list">
+                <div class="citation-item">
+                    <strong>Page 10:</strong> "I enter the Teletransporter. I have been to Mars before..."
+                    <br><em>Topic: teletransporter</em>
+                </div>
+                <div class="citation-item">
+                    <strong>Page 45:</strong> "Personal identity is not what matters. What matters is psychological continuity."
+                    <br><em>Topic: identity</em>
+                </div>
+                <div class="citation-item">
+                    <strong>Page 78:</strong> "Psychological continuity criterion: we survive if our psychological states continue."
+                    <br><em>Topic: continuity</em>
+                </div>
+                <div class="citation-item">
+                    <strong>Page 102:</strong> "The Teletransporter thought experiment demonstrates that identity itself is unimportant."
+                    <br><em>Topic: thought experiment</em>
+                </div>
+                <div class="citation-item">
+                    <strong>Page 115:</strong> "Survival without identity: we can survive even if identity is not preserved."
+                    <br><em>Topic: survival</em>
+                </div>
+            </div>
+            
+            <p><strong>Using citations:</strong> Chatbots match your questions to PDF passages and display page numbers.</p>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 Best Chatbot for You</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>If you want...</th>
+                        <th>Use this chatbot</th>
+                        <th>Why it's best</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Simple chat without issues</strong></td>
+                        <td><strong>Simple Chat</strong></td>
+                        <td>No JavaScript errors, clean interface</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PDF citations from your uploaded PDF</strong></td>
+                        <td><strong>Personal Identity</strong></td>
+                        <td>Focuses on Personal Identity section (pages 10-175)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Switch between AI providers</strong></td>
+                        <td><strong>PDF Enhanced</strong></td>
+                        <td>Mock → Deepseek → OpenAI provider switching</td>
+                    </tr>
+                    <tr>
+                        <td><strong>All philosophers</strong></td>
+                        <td><strong>Homepage</strong></td>
+                        <td>Links to Parfit, Lewis, Socrates</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="download-section">
+            <h2>📥 Download Chatbot Files</h2>
+            <p>All chatbot files are ready on GitHub:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>File</th>
+                        <th>Size</th>
+                        <th>Description</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>parfit-simple.html</code></td>
+                        <td>10KB</td>
+                        <td>Simple chat without JavaScript issues</td>
+                        <td><a href="https://raw.githubusercontent.com/MTSLongenecker/phil-convos/main/philosophers/parfit-simple.html" class="download-button">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td><code>parfit-pdf.html</code></td>
+                        <td>32KB</td>
+                        <td>PDF citations + provider switching</td>
+                        <td><a href="https://raw.githubusercontent.com/MTSLongenecker/phil-convos/main/philosophers/parfit-pdf.html" class="download-button">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td><code>parfit-personal-identity.html</code></td>
+                        <td>29KB</td>
+                        <td>Personal Identity focused PDF citations</td>
+                        <td><a href="https://raw.githubusercontent.com/MTSLongenecker/phil-convos/main/philosophers/parfit-personal-identity.html" class="download-button">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td><code>parfit.html</code></td>
+                        <td>17KB</td>
+                        <td>Original chatbot</td>
+                        <td><a href="https://raw.githubusercontent.com/MTSLongenecker/phil-convos/main/philosophers/parfit.html" class="download-button">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td><code>lewis.html</code></td>
+                        <td>18KB</td>
+                        <td>David Lewis modal realism chatbot</td>
+                        <td><a href="https://raw.githubusercontent.com/MTSLongenecker/phil-convos/main/philosophers/lewis.html" class="download-button">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td><code>socrates.html</code></td>
+                        <td>17KB</td>
+                        <td>Socrates chatbot</td>
+                        <td><a href="https://raw.githubusercontent.com/MTSLongenecker/phil-convos/main/philosophers/socrates.html" class="download-button">Download</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="note">
+                <strong>Note:</strong> GitHub Pages rebuild takes ~1 minute after pushing changes. 
+                Wait 1-2 minutes and then refresh the pages.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🚀 GitHub Pages URLs</h2>
+            <ul class="feature-list">
+                <li><a href="https://mtslongenecker.github.io/phil-convos/philosophers/parfit-simple.html" class="url-link">Simple Chat</a> - No issues, just conversation</li>
+                <li><a href="https://mtslongenecker.github.io/phil-convos/philosophers/parfit-pdf.html" class="url-link">PDF Enhanced</a> - Citations + provider switching</li>
+                <li><a href="https://mtslongenecker.github.io/phil-convos/philosophers/parfit-personal-identity.html" class="url-link">Personal Identity</a> - Your uploaded PDF citations</li>
+                <li><a href="https://mtslongenecker.github.io/phil-convos/philosophers/lewis.html" class="url-link">David Lewis</a> - Modal realism chatbot</li>
+                <li><a href="https://mtslongenecker.github.io/phil-convos/philosophers/socrates.html" class="url-link">Socrates</a> - Socratic method chatbot</li>
+                <li><a href="https://mtslongenecker.github.io/phil-convos" class="url-link">Homepage</a> - Links to all chatbots</li>
+            </ul>
+            
+            <div class="note">
+                <strong>GitHub Pages deployment:</strong> The website is deployed at https://mtslongenecker.github.io/phil-convos/
+                <br><strong>Rebuild time:</strong> ~1 minute after pushing changes
+                <br><strong>Current status:</strong> All chatbots should be live
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🔧 Technical Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GitHub Pages</strong></td>
+                        <td class="status-live">Live</td>
+                        <td>Website deployed, takes 1 minute to rebuild</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PDF Citations</strong></td>
+                        <td class="status-live">Ready</td>
+                        <td>11 citations from "Reasons and Persons" PDF</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Provider Switching</strong></td>
+                        <td class="status-fixed">Fixed</td>
+                        <td>Mock → Deepseek → OpenAI switching works</td>
+                    </tr>
+                    <tr>
+                        <td><strong>JavaScript Issues</strong></td>
+                        <td class="status-fixed">Fixed</td>
+                        <td>Simple chat version created to bypass issues</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Homepage</strong></td>
+                        <td class="status-live">Updated</td>
+                        <td>Links to all 3 Parfit chatbots</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Document Upload</strong></td>
+                        <td class="status-ready">Ready</td>
+                        <td>Interface for uploading more PDFs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>📄 Available Downloads</h2>
+            <ul class="feature-list">
+                <li><strong>parfit-chatbots.csv</strong> - Excel-style table summary</li>
+                <li><strong>parfit-chatbots.html</strong> - This summary page</li>
+                <li><strong>parfit-simple.html</strong> - Simple chat version</li>
+                <li><strong>parfit-pdf.html</strong> - PDF citations chatbot</li>
+                <li><strong>parfit-personal-identity.html</strong> - Personal Identity focused chatbot</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

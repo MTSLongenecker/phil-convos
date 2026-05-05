@@ -1,0 +1,7 @@
+Chatbot Name,URL,Features,Status,GitHub Pages Link,PDF Citations,Provider Switching
+Original Parfit,philosophers/parfit.html,Simple conversation,Live,https://mtslongenecker.github.io/phil-convos/philosophers/parfit.html,None,No
+Simple Chat,philosophers/parfit-simple.html,Simple chat without issues,Live,https://mtslongenecker.github.io/phil-convos/philosophers/parfit-simple.html,None,No
+PDF Enhanced,philosophers/parfit-pdf.html,Citations + provider switching,Fixed JavaScript,https://mtslongenecker.github.io/phil-convos/philosophers/parfit-pdf.html,11 citations from PDF,Mock → Deepseek → OpenAI
+Personal Identity,philosophers/parfit-personal-identity.html,Focused on Personal Identity,Live,https://mtslongenecker.github.io/phil-convos/philosophers/parfit-personal-identity.html,10 citations from Personal Identity section,No
+David Lewis,philosophers/lewis.html,Modal realism chatbot,Live,https://mtslongenecker.github.io/phil-convos/philosophers/lewis.html,None,No
+Socrates,philosophers/socrates.html,Socratic method chatbot,Live,https://mtslongenecker.github.io/phil-convos/philosophers/socrates.html,None,No
