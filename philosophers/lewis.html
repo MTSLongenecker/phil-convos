@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Lewis Dialogue | Phil-Convos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/philosopher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* David Lewis specific styles */
+        .lewis-header {
+            background-color: #8e44ad;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #9b59b6;
+        }
+        
+        .lewis-intro {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .lewis-message {
+            background-color: #f0e6f5;
+            border-left: 4px solid #8e44ad;
+        }
+        
+        .modal-world-card {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 5px solid #8e44ad;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .concept-card {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .counterpart-example {
+            background-color: #e8f4fc;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="lewis-header">
+            <div class="header-content">
+                <h1 class="logo"><i class="fas fa-brain"></i> Phil-Convos</h1>
+                <p class="subtitle">Dialogue with David Lewis</p>
+            </div>
+        </header>
+
+        <nav class="philosopher-nav">
+            <a href="../index.html" class="nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="parfit.html" class="nav-link">
+                <i class="fas fa-user-circle"></i> Derek Parfit
+            </a>
+            <a href="socrates.html" class="nav-link">
+                <i class="fas fa-user-circle"></i> Socrates
+            </a>
+        </nav>
+
+        <main>
+            <section class="philosopher-profile">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="../assets/images/lewis-icon.svg" alt="David Lewis icon" class="placeholder-icon">
+                    </div>
+                    <div class="profile-info">
+                        <h2>David Lewis</h2>
+                        <p class="profile-era">1941–2001</p>
+                        <p class="profile-specialty">Modal Realism, Counterpart Theory, Metaphysics</p>
+                        <p class="profile-description">
+                            American philosopher known for modal realism, counterpart theory, and Humean supervenience.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <h3>Philosophical Contributions</h3>
+                        <ul>
+                            <li><strong>Modal Realism:</strong> All possible worlds are equally real concrete entities</li>
+                            <li><strong>Counterpart Theory:</strong> Objects in different worlds are counterparts rather than identical</li>
+                            <li><strong>Humean Supervenience:</strong> All facts about the world supervene on the arrangement of local qualities</li>
+                            <li><strong>Conventions and Language:</strong> Language meaning emerges from conventions in communities</li>
+                            <li><strong>Counterfactuals:</strong> Counterfactual analysis of causation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lewis-intro">
+                <h2>Dialogue with David Lewis</h2>
+                <p>This chatbot draws from Lewis' seminal works including <em>On the Plurality of Worlds</em> and <em>Counterfactuals</em>. Ask about:</p>
+                <ul>
+                    <li><strong>Modal Realism:</strong> Are all possible worlds equally real?</li>
+                    <li><strong>Counterpart Theory:</strong> How do objects exist across different worlds?</li>
+                    <li><strong>Humean Supervenience:</strong> How do properties emerge from arrangements?</li>
+                    <li><strong>Conventions:</strong> How do linguistic conventions determine meaning?</li>
+                </ul>
+                <p>The chatbot uses concepts, arguments, and examples from Lewis' works to engage with you.</p>
+            </section>
+
+            <section class="thought-experiments">
+                <h2>Thought Experiments</h2>
+                <div class="modal-world-card">
+                    <h3>Modal Realism</h3>
+                    <p>Consider a world where everything is identical to ours except that one atom is positioned differently. Is that world less real than ours?</p>
+                </div>
+                <div class="modal-world-card">
+                    <h3>Counterpart Theory</h3>
+                    <p>If you exist in multiple possible worlds, are you identical across worlds or are you a counterpart?</p>
+                    <div class="counterpart-example">
+                        <p><strong>Example:</strong> In world W1, you are a philosopher. In world W2, you are a musician. Are these the same person or counterparts?</p>
+                    </div>
+                </div>
+                <div class="modal-world-card">
+                    <h3>Humean Supervenience</h3>
+                    <p>Imagine a world with exactly the same distribution of atoms as ours but with different laws of nature. Is this possible?</p>
+                </div>
+                <div class="modal-world-card">
+                    <h3>Conventional Meaning</h3>
+                    <p>If everyone in a community uses "green" to refer to red objects, does "green" mean red in that community?</p>
+                </div>
+            </section>
+
+            <section class="dialogue-section">
+                <h2>Dialogue Interface</h2>
+                <div class="dialogue-container">
+                    <div class="dialogue-messages">
+                        <!-- Initial message from David Lewis -->
+                        <div class="message lewis-message">
+                            <div class="message-header">
+                                <span class="sender">David Lewis</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                I'd like to begin with a fundamental question about reality - what do you make of the claim that all possible worlds are equally real?
+                            </div>
+                        </div>
+                        <div class="message lewis-message">
+                            <div class="message-header">
+                                <span class="sender">David Lewis</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                The standard view is that only our world is real, while other worlds are merely possibilities. I argue that all possible worlds are concrete entities, just as real as our world, but spatiotemporally disconnected from us.
+                            </div>
+                        </div>
+                        <div class="message lewis-message">
+                            <div class="message-header">
+                                <span class="sender">David Lewis</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                This leads to counterpart theory: objects in different worlds are counterparts rather than identical persons. A counterpart relation is based on qualitative similarity rather than identity across worlds.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dialogue-input">
+                        <textarea id="userInput" placeholder="Type your response to David Lewis..." rows="3"></textarea>
+                        <div class="dialogue-controls">
+                            <button id="sendBtn" class="btn btn-primary">
+                                <i class="fas fa-comments"></i> Send Message
+                            </button>
+                            <button id="clearBtn" class="btn btn-secondary">
+                                <i class="fas fa-trash"></i> Clear Conversation
+                            </button>
+                            <button id="randomBtn" class="btn btn-secondary">
+                                <i class="fas fa-question-circle"></i> Random Question
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="philosopher-key-concepts">
+                <h2>Key Concepts to Explore</h2>
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <h3>Modal Realism</h3>
+                        <p>The view that all possible worlds are equally real concrete entities.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Counterpart Theory</h3>
+                        <p>The theory that objects in different worlds are counterparts rather than identical.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Humean Supervenience</h3>
+                        <p>The doctrine that all facts about the world supervene on the arrangement of local qualities.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Conventions</h3>
+                        <p>The view that language meaning emerges from conventions in communities.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Phil-Convos</h4>
+                    <p>A philosophical dialogue platform</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <p><a href="https://en.wikipedia.org/wiki/David_Lewis_(philosopher)" target="_blank">Wikipedia</a></p>
+                    <p><a href="https://plato.stanford.edu/entries/david-lewis/" target="_blank">Stanford Encyclopedia</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suggestions</h4>
+                    <p>Suggestions for additional features welcome</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Phil-Convos. This David Lewis chatbot is designed for educational purposes only.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/dialogue.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendBtn = document.getElementById('sendBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const randomBtn = document.getElementById('randomBtn');
+            const userInput = document.getElementById('userInput');
+            const dialogueMessages = document.querySelector('.dialogue-messages');
+            
+            // David Lewis responses based on his works
+            const lewisResponses = {
+                "Are all possible worlds equally real?": "Yes, according to modal realism, all possible worlds are equally real concrete entities. Our world is just one among many.",
+                "What is counterpart theory?": "Counterpart theory explains trans-world identity. Objects in different worlds are counterparts rather than identical persons.",
+                "What is Humean supervenience?": "Humean supervenience holds that all facts about the world supervene on the arrangement of local qualities.",
+                "How do conventions determine meaning?": "Language meaning emerges from conventions in communities. Words mean what they do because of shared conventions.",
+                "What is modal realism?": "Modal realism is the view that all possible worlds are real. They are not mere possibilities but actual concrete entities.",
+                "Are counterparts identical across worlds?": "No, counterparts are not identical. They are similar persons across different possible worlds.",
+                "What is a possible world?": "A possible world is a complete way things might have been. Modal realism holds that all such worlds are equally real.",
+                "How do we know about other worlds?": "We know about other worlds through modal claims - statements about what is possible or necessary."
+            };
+
+            const lewisQuestions = [
+                "Are all possible worlds equally real?",
+                "What is counterpart theory?",
+                "What is Humean supervenience?",
+                "How do conventions determine meaning?",
+                "What is modal realism?",
+                "Are counterparts identical across worlds?",
+                "What is a possible world?",
+                "How do we know about other worlds?"
+            ];
+
+            // Function to add a message to the dialogue
+            function addMessage(sender, content) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+                
+                if (sender === 'David Lewis') {
+                    messageDiv.classList.add('lewis-message');
+                } else {
+                    messageDiv.classList.add('user-message');
+                }
+                
+                messageDiv.innerHTML = `
+                    <div class="message-header">
+                        <span class="sender">${sender}</span>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-content">${content}</div>
+                `;
+                
+                dialogueMessages.appendChild(messageDiv);
+                
+                // Scroll to bottom
+                dialogueMessages.scrollTop = dialogueMessages.scrollHeight;
+                
+                // Add fade-in animation
+                messageDiv.style.opacity = '0';
+                setTimeout(() => {
+                    messageDiv.style.transition = 'opacity 0.3s ease';
+                    messageDiv.style.opacity = '1';
+                }, 0);
+            }
+
+            // Enhanced send message functionality
+            if (sendBtn) {
+                sendBtn.addEventListener('click', function() {
+                    const message = userInput.value.trim();
+                    if (message) {
+                        // Add user message
+                        addMessage('You', message);
+                        
+                        // Add David Lewis response after delay
+                        setTimeout(() => {
+                            const response = lewisResponses[message] || "David Lewis: I need to consult my works on modal realism and counterpart theory to answer that question.";
+                            addMessage('David Lewis', response);
+                        }, 1000);
+                        
+                        // Clear input
+                        userInput.value = '';
+                    }
+                });
+            }
+
+            // Clear conversation
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function() {
+                    const messages = dialogueMessages.querySelectorAll('.message');
+                    messages.forEach(msg => {
+                        // Keep the first three introductory messages
+                        if (!msg.classList.contains('lewis-message') || 
+                            msg.textContent.indexOf('I\'d like to begin') === -1 &&
+                            msg.textContent.indexOf('The standard view') === -1 &&
+                            msg.textContent.indexOf('This leads to') === -1) {
+                            msg.remove();
+                        }
+                    });
+                    
+                    // Show confirmation message
+                    setTimeout(() => {
+                        addMessage('David Lewis', "The conversation has been cleared. Shall we begin anew with modal realism?");
+                    }, 500);
+                });
+            }
+
+            // Random question button
+            if (randomBtn) {
+                randomBtn.addEventListener('click', function() {
+                    const randomQuestion = lewisQuestions[Math.floor(Math.random() * lewisQuestions.length)];
+                    userInput.value = randomQuestion;
+                });
+            }
+
+            // Allow Enter key to send message (Shift+Enter for new line)
+            userInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendBtn.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
