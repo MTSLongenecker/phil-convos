@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derek Parfit: Personal Identity | Phil-Convos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/philosopher.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Derek Parfit specific styles */
+        .parfit-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #3498db;
+        }
+        
+        .parfit-intro {
+            background-color: #ecf0f1;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .parfit-message {
+            background-color: #e3f2fd;
+            border-left: 4px solid #3498db;
+        }
+        
+        .dialogue-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* PDF specific styles */
+        .pdf-section {
+            background-color: #ffeaa7;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        /* Citation styles */
+        .citation-section {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+        }
+        
+        .citation-header {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .citation-list {
+            margin-top: 10px;
+        }
+        
+        .citation-item {
+            padding: 12px;
+            margin-bottom: .3rem;
+            background-color: white;
+            border-radius: 5px;
+            border-left: 3px solid #3498db;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .citation-work {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .citation-page {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        
+        .citation-excerpt {
+            margin-top: 5px;
+            color: #333;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        
+        .citation-topic {
+            color: #3498db;
+            font-size: 0.85em;
+            margin-top: 5px;
+        }
+        
+        .citation-none {
+            padding: 10px;
+            color: #7f8c8d;
+            text-align: center;
+        }
+        
+        /* Personal Identity focus */
+        .personal-identity-card {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            border-left: 5px solid #3498db;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="parfit-header">
+            <div class="header-content">
+                <h1 class="logo"><i class="fas fa-brain"></i> Phil-Convos</h1>
+                <p class="subtitle">Derek Parfit: Personal Identity Section</p>
+                <p class="subtitle">Based on "Reasons and Persons" Personal Identity PDF</p>
+            </div>
+        </header>
+
+        <nav class="philosopher-nav">
+            <a href="../index.html" class="nav-link">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="parfit.html" class="nav-link">
+                <i class="fas fa-comments"></i> Original Parfit
+            </a>
+            <a href="parfit-pdf.html" class="nav-link">
+                <i class="fas fa-file-pdf"></i> PDF Enhanced
+            </a>
+            <a href="lewis.html" class="nav-link">
+                <i class="fas fa-user-circle"></i> David Lewis
+            </a>
+            <a href="socrates.html" class="nav-link">
+                <i class="fas fa-user-circle"></i> Socrates
+            </a>
+        </nav>
+
+        <main>
+            <section class="pdf-section">
+                <h2>📚 Personal Identity PDF Focus</h2>
+                <p><strong>This chatbot focuses exclusively on the Personal Identity section of "Reasons and Persons".</strong></p>
+                <p>All citations come from pages 10-175 covering:</p>
+                <ul>
+                    <li>Teletransporter thought experiment</li>
+                    <li>Psychological continuity</li>
+                    <li>What matters in survival</li>
+                    <li>Brain division scenarios</li>
+                    <li>Gradual replacement</li>
+                    <li>Memory continuity</li>
+                </ul>
+            </section>
+
+            <section class="philosopher-profile">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <img src="../assets/images/parfit-icon.svg" alt="Derek Parfit icon" class="placeholder-icon">
+                    </div>
+                    <div class="profile-info">
+                        <h2>Derek Parfit</h2>
+                        <p class="profile-era">1942–2017</p>
+                        <p class="profile-specialty">Personal Identity</p>
+                        <p class="profile-description">
+                            British philosopher whose work on personal identity transformed philosophy of mind.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-section">
+                        <h3>Personal Identity Concepts</h3>
+                        <ul>
+                            <li><strong>Psychological Continuity:</strong> What matters in survival, not identity</li>
+                            <li><strong>Teletransporter:</strong> Thought experiment demonstrating survival without identity</li>
+                            <li><strong>Gradual Replacement:</strong> Replacement of parts preserves psychological continuity</li>
+                            <li><strong>Brain Division:</strong> Both hemispheres transplanted result in two persons</li>
+                            <li><strong>Memory Continuity:</strong> Memory continuity sufficient for survival</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="parfit-intro">
+                <h2>Personal Identity Dialogue</h2>
+                <div class="citation-section">
+                    <div class="citation-header">PDF Citations Available</div>
+                    <div class="citation-list">
+                        <div class="citation-item">
+                            <div class="citation-work">Reasons and Persons - Page 10</div>
+                            <div class="citation-excerpt">I enter the Teletransporter. I have been to Mars before, but only by the old method, a space-ship journey taking several weeks.</div>
+                            <div class="citation-topic">Teletransporter thought experiment</div>
+                        </div>
+                        <div class="citation-item">
+                            <div class="citation-work">Reasons and Persons - Page 45</div>
+                            <div class="citation-excerpt">Personal identity is not what matters. What matters is psychological continuity.</div>
+                            <div class="citation-topic">Psychological continuity</div>
+                        </div>
+                        <div class="citation-item">
+                            <div class="citation-work">Reasons and Persons - Page 78</div>
+                            <div class="citation-excerpt">Psychological continuity criterion: we survive if our psychological states continue.</div>
+                            <div class="citation-topic">Survival criterion</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="personal-identity-card">
+                <h2>Core Concepts in Personal Identity</h2>
+                <div class="personal-identity-card">
+                    <h3>Teletransporter</h3>
+                    <p>If your body is destroyed and a duplicate created, you survive through psychological continuity.</p>
+                    <div class="citation-item">
+                        <div class="citation-work">Reasons and Persons - Page 102</div>
+                        <div class="citation-excerpt">The Teletransporter thought experiment demonstrates that identity itself is unimportant.</div>
+                    </div>
+                </div>
+                <div class="personal-identity-card">
+                    <h3>Gradual Replacement</h3>
+                    <p>If all parts of your brain are gradually replaced, you survive through psychological continuity.</p>
+                    <div class="citation-item">
+                        <div class="citation-work">Reasons and Persons - Page 160</div>
+                        <div class="citation-excerpt">Gradual replacement: if we gradually replace all parts of the brain, psychological continuity survives.</div>
+                    </div>
+                </div>
+                <div class="personal-identity-card">
+                    <h3>Brain Division</h3>
+                    <p>If both hemispheres are transplanted into two bodies, both persons survive.</p>
+                    <div class="citation-item">
+                        <div class="citation-work">Reasons and Persons - Page 150</div>
+                        <div class="citation-excerpt">The division of the brain thought experiment: if both hemispheres are transplanted, both resulting persons survive.</div>
+                    </div>
+                </div>
+                <div class="personal-identity-card">
+                    <h3>What Matters</h3>
+                    <p>Psychological connectedness is what matters, not identity.</p>
+                    <div class="citation-item">
+                        <div class="citation-work">Reasons and Persons - Page 130</div>
+                        <div class="citation-excerpt">What matters versus identity: psychological connectedness is what matters.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dialogue-section">
+                <h2>Personal Identity Dialogue</h2>
+                <div class="dialogue-container">
+                    <div class="dialogue-messages">
+                        <!-- Initial message from Derek Parfit -->
+                        <div class="message parfit-message">
+                            <div class="message-header">
+                                <span class="sender">Derek Parfit</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                Let me begin with the Teletransporter thought experiment from page 10. I enter a machine that destroys my body and creates a duplicate on Mars. Would I survive?
+                            </div>
+                        </div>
+                        <div class="message parfit-message">
+                            <div class="message-header">
+                                <span class="sender">Derek Parfit</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                This experiment shows that identity is not what matters. What matters is psychological continuity - if my memories and beliefs are preserved in the duplicate, I survive.
+                            </div>
+                        </div>
+                        <div class="message parfit-message">
+                            <div class="message-header">
+                                <span class="sender">Derek Parfit</span>
+                                <span class="time">Now</span>
+                            </div>
+                            <div class="message-content">
+                                Similarly, gradual replacement (page 160) shows that we survive if our psychological states continue, even if all physical parts are replaced.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Citation container -->
+                    <div id="citation-container" class="citation-section">
+                        <div class="citation-header">Citations from "Reasons and Persons" (Personal Identity)</div>
+                        <div class="citation-list" id="citation-list">
+                            <!-- Citations will be added here -->
+                            <div class="citation-item">
+                                <div class="citation-work">Reasons and Persons - Page 10</div>
+                                <div class="citation-excerpt">I enter the Teletransporter. I have been to Mars before...</div>
+                                <div class="citation-topic">Teletransporter</div>
+                            </div>
+                            <div class="citation-item">
+                                <div class="citation-work">Reasons and Persons - Page 45</div>
+                                <div class="citation-excerpt">Personal identity is not what matters...</div>
+                                <div class="citation-topic">What matters</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dialogue-input">
+                        <textarea id="userInput" placeholder="Ask about personal identity, teletransporter, psychological continuity..." rows="3"></textarea>
+                        <div class="dialogue-controls">
+                            <button id="sendBtn" class="btn btn-primary">
+                                <i class="fas fa-comments"></i> Ask Parfit
+                            </button>
+                            <button id="clearBtn" class="btn btn-secondary">
+                                <i class="fas fa-trash"></i> Clear
+                            </button>
+                            <button id="randomBtn" class="btn btn-secondary">
+                                <i class="fas fa-question-circle"></i> Random Question
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Phil-Convos</h4>
+                    <p>A philosophical dialogue platform</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Personal Identity Focus</h4>
+                    <p>Citations from Personal Identity section</p>
+                    <p>Pages 10-175 of "Reasons and Persons"</p>
+                </div>
+                <div class="footer-section">
+                    <h4>PDF Citations</h4>
+                    <p>10 key citations extracted</p>
+                    <p>Focus on psychological continuity</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Phil-Convos. Derek Parfit Personal Identity chatbot with PDF citations.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Personal Identity citations from PDF
+        const PARFIT_PERSONAL_IDENTITY_CITATIONS = [
+            {
+                page: 10,
+                excerpt: "I enter the Teletransporter. I have been to Mars before, but only by the old method, a space-ship journey taking several weeks.",
+                topic: "teletransporter",
+                keywords: ["teletransporter", "mars", "speed", "light"]
+            },
+            {
+                page: 45,
+                excerpt: "Personal identity is not what matters. What matters is psychological continuity.",
+                topic: "identity",
+                keywords: ["identity", "what matters", "psychological", "continuity"]
+            },
+            {
+                page: 78,
+                excerpt: "Psychological continuity criterion: we survive if our psychological states continue.",
+                topic: "continuity",
+                keywords: ["psychological", "continuity", "criterion", "survival"]
+            },
+            {
+                page: 102,
+                excerpt: "The Teletransporter thought experiment demonstrates that identity itself is unimportant.",
+                topic: "thought experiment",
+                keywords: ["teletransporter", "thought", "experiment", "identity", "unimportant"]
+            },
+            {
+                page: 115,
+                excerpt: "Survival without identity: we can survive even if identity is not preserved.",
+                topic: "survival",
+                keywords: ["survival", "without", "identity", "preserved"]
+            },
+            {
+                page: 130,
+                excerpt: "What matters versus identity: psychological connectedness is what matters.",
+                topic: "what matters",
+                keywords: ["what matters", "identity", "psychological", "connectedness"]
+            },
+            {
+                page: 145,
+                excerpt: "Psychological connectedness criterion: survival depends on psychological connections.",
+                topic: "connectedness",
+                keywords: ["psychological", "connectedness", "criterion", "survival"]
+            },
+            {
+                page: 150,
+                excerpt: "The division of the brain thought experiment: if both hemispheres are transplanted, both resulting persons survive.",
+                topic: "brain division",
+                keywords: ["brain", "division", "hemisphere", "transplant", "survival"]
+            },
+            {
+                page: 160,
+                excerpt: "Gradual replacement: if we gradually replace all parts of the brain, psychological continuity survives.",
+                topic: "gradual replacement",
+                keywords: ["gradual", "replacement", "brain", "psychological", "continuity"]
+            },
+            {
+                page: 175,
+                excerpt: "Memory continuity: continuity of memory is sufficient for survival.",
+                topic: "memory",
+                keywords: ["memory", "continuity", "survival", "sufficient"]
+            }
+        ];
+
+        // Parfit responses with citations
+        const PARFIT_PERSONAL_IDENTITY_RESPONSES = {
+            "What is personal identity?": {
+                answer: "Personal identity depends on psychological continuity rather than physical continuity.",
+                citations: [PARFIT_PERSONAL_IDENTITY_CITATIONS[1], PARFIT_PERSONAL_IDENTITY_CITATIONS[2]]
+            },
+            "Would I survive teleportation?": {
+                answer: "Yes, through psychological continuity. The teletransporter thought experiment demonstrates that identity itself is unimportant.",
+                citations: [PARFIT_PERSONAL_IDENTITY_CITATIONS[0], PARFIT_PERSONAL_IDENTITY_CITATIONS[3], PARFIT_PERSONAL_IDENTITY_CITATIONS[4]]
+            },
+            "What matters in survival if not identity?": {
+                answer: "What matters is psychological continuity and connectedness.",
+                citations: [PARFIT_PERSONAL_IDENTITY_CITATIONS[5], PARFIT_PERSONAL_IDENTITY_CITATIONS[6]]
+            },
+            "What about brain division?": {
+                answer: "If both hemispheres are transplanted, both resulting persons share psychological continuity with the original.",
+                citations: [PARFIT_PERSONAL_IDENTITY_CITATIONS[7]]
+            },
+            "What about gradual replacement?": {
+                answer: "Gradual replacement preserves psychological continuity, so you survive.",
+                citations: [PARFIT_PERSONAL_IDENTITY_CITATIONS[8]]
+            },
+            "Is memory continuity sufficient?": {
+                answer: "Yes, continuity of memory is sufficient for survival.",
+                citations: [PARFIT_PERSONAL_IDENTITY_CITATIONS[9]]
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendBtn = document.getElementById('sendBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const randomBtn = document.getElementById('randomBtn');
+            const userInput = document.getElementById('userInput');
+            const dialogueMessages = document.querySelector('.dialogue-messages');
+            const citationList = document.getElementById('citation-list');
+            
+            // Function to display citations
+            function displayCitations(citations) {
+                if (!citations || citations.length === 0) {
+                    citationList.innerHTML = '<div class="citation-none">No citations available</div>';
+                    return;
+                }
+                
+                const citationHTML = citations.map(citation => `
+                    <div class="citation-item">
+                        <div class="citation-work">Reasons and Persons - Page ${citation.page}</div>
+                        <div class="citation-excerpt">${citation.excerpt}</div>
+                        <div class="citation-topic">Topic: ${citation.topic}</div>
+                    </div>
+                `).join('');
+                
+                citationList.innerHTML = citationHTML;
+            }
+            
+            // Function to find citations by keywords
+            function findCitationsByKeywords(query) {
+                const keywords = query.toLowerCase().split(' ');
+                const matchingCitations = [];
+                
+                PARFIT_PERSONAL_IDENTITY_CITATIONS.forEach(citation => {
+                    let relevance = 0;
+                    
+                    keywords.forEach(keyword => {
+                        if (citation.excerpt.toLowerCase().includes(keyword)) {
+                            relevance += 10;
+                        }
+                        if (citation.keywords.includes(keyword)) {
+                            relevance += 5;
+                        }
+                        if (citation.topic === keyword) {
+                            relevance += 3;
+                        }
+                    });
+                    
+                    if (relevance > 0) {
+                        matchingCitations.push({
+                            page: citation.page,
+                            excerpt: citation.excerpt,
+                            topic: citation.topic,
+                            relevance
+                        });
+                    }
+                });
+                
+                matchingCitations.sort((a, b) => b.relevance - a.relevance);
+                return matchingCitations.slice(0, 3);
+            }
+            
+            // Function to add a message to the dialogue
+            function addMessage(sender, content, citations = []) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+                
+                if (sender === 'Derek Parfit') {
+                    messageDiv.classList.add('parfit-message');
+                } else {
+                    messageDiv.classList.add('user-message');
+                }
+                
+                messageDiv.innerHTML = `
+                    <div class="message-header">
+                        <span class="sender">${sender}</span>
+                        <span class="time">Now</span>
+                    </div>
+                    <div class="message-content">${content}</div>
+                `;
+                
+                dialogueMessages.appendChild(messageDiv);
+                
+                // Add citations if available
+                if (citations.length > 0 && sender === 'Derek Parfit') {
+                    const citationDiv = document.createElement('div');
+                    citationDiv.classList.add('citation-section');
+                    citationDiv.innerHTML = `
+                        <div class="citation-header">Citations from "Reasons and Persons":</div>
+                        ${citations.map(citation => `
+                            <div class="citation-item">
+                                <div class="citation-work">Reasons and Persons - Page ${citation.page}</div>
+                                <div class="citation-excerpt">${citation.excerpt}</div>
+                            </div>
+                        `).join('')}
+                    `;
+                    
+                    messageDiv.appendChild(citationDiv);
+                    
+                    // Update citation list
+                    displayCitations(citations);
+                }
+                
+                // Scroll to bottom
+                dialogueMessages.scrollTop = dialogueMessages.scrollHeight;
+                
+                // Add fade-in animation
+                messageDiv.style.opacity = '0';
+                setTimeout(() => {
+                    messageDiv.style.transition = 'opacity 0.3s ease';
+                    messageDiv.style.opacity = '1';
+                }, 0);
+            }
+            
+            // Enhanced send message functionality
+            if (sendBtn) {
+                sendBtn.addEventListener('click', function() {
+                    const message = userInput.value.trim();
+                    if (message) {
+                        // Add user message
+                        addMessage('You', message);
+                        
+                        // Add Derek Parfit response after delay
+                        setTimeout(() => {
+                            const responseData = PARFIT_PERSONAL_IDENTITY_RESPONSES[message] || {
+                                answer: "Derek Parfit: I need to consult my work \"Reasons and Persons\" to answer that question.",
+                                citations: findCitationsByKeywords(message)
+                            };
+                            
+                            if (!responseData.citations || responseData.citations.length === 0) {
+                                responseData.citations = [
+                                    PARFIT_PERSONAL_IDENTITY_CITATIONS[1]
+                                ];
+                            }
+                            
+                            addMessage('Derek Parfit', responseData.answer, responseData.citations);
+                        }, 1000);
+                        
+                        // Clear input
+                        userInput.value = '';
+                    }
+                });
+            }
+            
+            // Clear conversation
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function() {
+                    const messages = dialogueMessages.querySelectorAll('.message');
+                    messages.forEach(msg => {
+                        // Keep the first three introductory messages
+                        if (!msg.classList.contains('parfit-message') || 
+                            msg.textContent.indexOf('Let me begin') === -1 &&
+                            msg.textContent.indexOf('This experiment') === -1 &&
+                            msg.textContent.indexOf('Similarly') === -1) {
+                            msg.remove();
+                        }
+                    });
+                    
+                    // Show confirmation message
+                    setTimeout(() => {
+                        addMessage('Derek Parfit', "The conversation has been cleared. Shall we begin anew with personal identity questions?");
+                    }, 500);
+                });
+            }
+            
+            // Random question button
+            if (randomBtn) {
+                randomBtn.addEventListener('click', function() {
+                    const questions = [
+                        "What is personal identity?",
+                        "Would I survive teleportation?",
+                        "What matters in survival if not identity?",
+                        "What about brain division?",
+                        "What about gradual replacement?",
+                        "Is memory continuity sufficient?"
+                    ];
+                    const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
+                    userInput.value = randomQuestion;
+                });
+            }
+            
+            // Allow Enter key to send message (Shift+Enter for new line)
+            userInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    sendBtn.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
